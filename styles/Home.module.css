@@ -1,0 +1,101 @@
+.page {
+  margin-left: 311px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.header {
+  margin-top: 34px;
+  margin-bottom: 24px;
+}
+
+.header span {
+  font-family: GT Walsheim Pro, sans-serif;
+  text-transform: uppercase;
+  line-height: 26px;
+  vertical-align: 10px;
+}
+
+.main span {
+  font-family: GT Walsheim Pro, sans-serif;
+}
+
+.main input {
+  font-size: 18px;
+  margin-top: 24px;
+  padding-left: 8px;
+  width: 403px;
+  height: 35px;
+}
+
+.main button {
+  border: none;
+  width: 117px;
+  height: 35px;
+  background-color: #63C556;
+  color: #FFFFFF;
+  margin-left: 11px;
+  vertical-align: 2px;
+}
+
+.main__loading {
+  margin-top: 51px;
+  margin-left: 30vw;
+}
+
+.main__loading .main__loading_text {
+  font-size: 18px;
+}
+
+.result__success {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  margin-top: 22px;
+  height: 369px;
+  width: 50vw;
+}
+
+.result__success .result__content {
+  position: absolute;
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: 15vw 5vw;
+}
+
+.result__success .result__content .result__content_text {
+  font-size: 14px;
+  height: 100%;
+  margin-bottom: 4px;
+  line-height: 16px;
+  width: 500px;
+}
+
+.result__success .title {
+  font-size: 18px;
+  padding-top: 18px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.result__error {
+  margin-top: 40px;
+}
+
+.result__error .result__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.result__error .result__content span {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.result__error .result__content svg {
+  display: block;
+  margin: auto;
+}
