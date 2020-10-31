@@ -1,5 +1,15 @@
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Regular'), local('GT-Walsheim-Pro-Regular'),
+      url('../fonts/GTWalsheimPro-Regular.ttf') format('woff2'),
+      url('../fonts/GTWalsheimPro-Regular.woff') format('woff'),
+      url('../fonts/GTWalsheimPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .page {
-  margin-left: 311px;
+  margin-left: 20vw;
 }
 
 .logo {
@@ -12,14 +22,14 @@
 }
 
 .header span {
-  font-family: GT Walsheim Pro, sans-serif;
+  font-family: 'GT Walsheim Pro', serif;
   text-transform: uppercase;
   line-height: 26px;
   vertical-align: 10px;
 }
 
 .main span {
-  font-family: GT Walsheim Pro, sans-serif;
+  font-family: 'GT Walsheim Pro', sans-serif;
 }
 
 .main input {
@@ -41,12 +51,22 @@
 }
 
 .main__loading {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   margin-top: 51px;
-  margin-left: 30vw;
 }
 
 .main__loading .main__loading_text {
   font-size: 18px;
+}
+
+.main__loading .main__loading_img {
+  display: block;
+  margin: auto;
 }
 
 .result__success {
@@ -88,6 +108,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
 }
 
 .result__error .result__content span {
@@ -98,4 +119,21 @@
 .result__error .result__content svg {
   display: block;
   margin: auto;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .page {
+    margin-left: 5px;
+  }
+  .main input {
+    width: calc(100vw - 10px);
+    height: 35px;
+  }
+  .main button {
+    width: calc(100vw - 10px);
+    height: 35px;
+    margin: 5px 0 0 0;
+  }
 }
